@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+
+int main()
+{
+printf("Introduceti un numar intreg n: ");
+int n,i,x,y;
+scanf("%d",&n);
+printf("\n\n\tAici aveti o selectie de functii:\n");
+printf("\tdublare=1,triplare=2,de 5 ori=3,de 7 ori=4, de 10 ori multiplicat=5\n");
+
+printf("\n Functiile ce i-au fost aplicate lui n:\n");
+
+for (x=1; x<=5 ; x++)
+//scanf("%d",&x);
+{  
+   if (x==1)
+    {
+    	y=2*n;
+        printf("(%d ,", y);
+    }
+   if (x==2)
+   {
+      y=3*n;
+      printf("%d ,", y );
+  }
+   if (x==3)
+   {
+      y=5*n;
+      printf("%d ,", y);
+  }
+   if (x==4)
+   {
+      y=7*n;
+      printf("%d ,", y );
+  }
+   if (x==5)
+   {
+       y=10*n;
+       printf("%d", y );
+   }
+}
+printf(")");
+}
